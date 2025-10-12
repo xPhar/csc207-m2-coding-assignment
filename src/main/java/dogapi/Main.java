@@ -1,7 +1,5 @@
 package dogapi;
 
-import java.util.List;
-
 public class Main {
 
     public static void main(String[] args) {
@@ -28,7 +26,7 @@ public class Main {
             return breedFetcher.getSubBreeds(breed).size();
         }
         catch (BreedFetcher.BreedNotFoundException e) {
-            return 0;
+            return -1;
         }
     }
 }
